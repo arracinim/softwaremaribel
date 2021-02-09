@@ -17,4 +17,4 @@ def tallerweb():
     return render_template('Taller_web.html')    
 
 if __name__ == '__main__':
-    app.run()
+    app.run(ssl_context="adhoc", host="0.0.0.0", port=5000)
